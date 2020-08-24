@@ -3,13 +3,10 @@ import pyttsx3
 import webbrowser
 
 while True:
-    #print("welcome to the input based operating system controller")
-    print("Hello Rahul ! How can I help you ?")
-    pyttsx3.speak("Hello Raahul ! How can I help you ?")
-    #print("Press 0 for manuals and 1 for application launch")
-    #pyttsx3.speak("Press 0 for manuals and 1 for application launch")
-    #print("Or write exit for Exiting the Application", )
-    #pyttsx3.speak("Or write exit for Exiting the Application")
+    print("welcome to the input based operating system controller")
+    print("Hello ! How can I help you ?")
+    pyttsx3.speak("Hello ! How can I help you ?")
+    
     while True:
         p=input()
        
@@ -60,7 +57,7 @@ while True:
         elif("youtube" in p):
             print("Opening Youtube on Google chrome !")
             pyttsx3.speak("Opening Youtube on Google chrome !")
-            url = 'https://www.youtube.com/?gl=IN&tab=r1'
+            url = 'https://www.youtube.com/'
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
             webbrowser.get(chrome_path).open(url)
             print("You have closed Youtube on Google Chrome. Anything else sir ?")
@@ -69,7 +66,7 @@ while True:
         elif("gmail" in p) or ("email" in p):
             print("Opening Gmail on Google chrome !")
             pyttsx3.speak("Opening Gmail on Google chrome !")
-            url = 'https://mail.google.com/mail/u/1/#inbox'
+            url = ' ((put your gmail link)) '
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
             webbrowser.get(chrome_path).open(url)
             print("You have closed Gmail on Google Chrome. Anything else sir ?")
@@ -78,7 +75,7 @@ while True:
         elif("compose" in p):
             print("Opening Gmail -> Compose on Google chrome !")
             pyttsx3.speak("Opening Gmail -> Compose on Google chrome !")
-            url = 'https://mail.google.com/mail/u/1/#inbox?compose=new'
+            url = ' ((put your gmail link -> inbox?compose=new)) '
             chrome_path = 'C:/Program Files (x86)/Google/Chrome/Application/chrome.exe %s'
             webbrowser.get(chrome_path).open(url)
             print("You have closed Gmail -> Compose on Google Chrome. Anything else sir ?")
